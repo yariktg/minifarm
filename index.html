@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MiniFarm</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>MiniFarm</h1>
+
+  <div class="status-bar">
+    <img src="img/carrot-icon.png" class="icon"> <span id="carrots">0</span>
+    <img src="img/coin-icon.png" class="icon"> <span id="coins">0</span>
+  </div>
+
+  <div class="farm" id="farm"></div>
+
+  <button class="shop-button" onclick="openShop()">Магазин</button>
+
+  <div id="shopModal" class="modal">
+  <h2>Магазин</h2>
+  <div class="shop-content">
+    <p>Морквин: <span id="carrotsShop">0</span></p>
+    <p>1 морква = <img src="img/coin-icon.png" class="icon-small"> 5</p>
+    <button onclick="sellCarrot()">Продати 1 моркву</button>
+    <br><br>
+    <button onclick="closeShop()">Закрити</button>
+  </div>
+ </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
